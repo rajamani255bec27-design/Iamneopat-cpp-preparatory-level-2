@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int pa_age,addon_age,e_type;
+    float pa_income;
+    cin>>pa_age>>addon_age>>e_type>>pa_income;
+    cout<<pa_income<<"\n";
+    if((pa_age>=21)&&(pa_age<=60)&&(addon_age>=18)&&(e_type>>=1)&&(e_type<=4)&&(pa_income<=300000))
+      cout<<"Yes,you are eligible for SBI credit cards.";
+    else
+      cout<<"No,you are not eligible for SBI credit cards.";
+    return 0;
+}
