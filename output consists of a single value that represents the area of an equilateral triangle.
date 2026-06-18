@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+#include<math.h>
+using namespace std;
+int main(){
+    float side;
+    float area;
+    cin>>side;
+    area=(sqrt(3)/4)*(side*side);
+    cout<<fixed<<setprecision(2)<<area;
+    return 0;
+}
