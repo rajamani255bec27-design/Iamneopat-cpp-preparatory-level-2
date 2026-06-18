@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int low, high, flag, temp;
+    cin >> low >> high;
+    if(low<=0 || high <=0||cin.fail())
+    {
+        cout << "Invalid";
+        return 0;
+    }
+    if (low > high) {
+        temp = low;
+        low = high;
+        high = temp;
+    }
+    do
+    {
+        flag = 0;
+
+        for(int i = 2; i <= low/2; ++i)
+        {
+            if(low % i == 0)
+            {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 0)
+            cout << low << endl;
+
+        ++low;
+    }while (low <= high);
+    
+    return 0;
+}
